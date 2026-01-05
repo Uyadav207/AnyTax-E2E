@@ -17,14 +17,15 @@ Before you begin, ensure you have the following installed:
 
 - **Node.js**: Version 14.x or higher ([Download Node.js](https://nodejs.org/))
 - **npm**: Usually comes with Node.js
-- **Git**: (Optional, for cloning the repository)
+- **Git**: For cloning the repository
 
 ## 🚀 Quick Start - Installation
 
-### Step 1: Clone or Navigate to Project
+### Step 1: Clone the Repository
 
 ```bash
-cd "anyTaxTest"
+git clone https://github.com/Uyadav207/AnyTax-E2E.git
+cd AnyTax-E2E
 ```
 
 ### Step 2: Install Dependencies
@@ -220,7 +221,7 @@ The HTML report includes:
 ## 📁 Project Structure
 
 ```
-anyTaxTest/
+AnyTax-E2E/
 ├── cypress/
 │   ├── e2e/
 │   │   ├── saucedemo.cy.js          # Task 2: SauceDemo E2E UI Flow test
