@@ -207,14 +207,15 @@ The HTML report includes:
 **To view the test report:**
 1. Run `npm run test:report:all` to generate the report
 2. Open `cypress/reports/html/report.html` in your browser
-3. Take a screenshot showing all tests passing (3 tests total)
+
+**Test Results:**
+
+![Passed Test Results](./Passed%20test.png)
 
 **Expected Results:**
 - ✅ SauceDemo E2E UI Flow: 1 passing
 - ✅ Money Transfer API Tests: 2 passing  
 - **Total: 3 tests, 0 failures**
-
-*Note: A screenshot of the passing test report should be included in this README. After generating the report, take a screenshot and save it as `test-report-screenshot.png` in the project root, then update the image reference above.*
 
 ---
 
@@ -290,12 +291,6 @@ This test verifies the complete user journey:
 3. ✅ Navigates to cart page and verifies the selected product is present
 4. ✅ Validates the product price is in correct monetary format (e.g., includes a $)
 
-**Credentials:**
-- Username: `standard_user`
-- Password: `secret_sauce`
-
----
-
 ## 🛠️ Configuration
 
 ### Cypress Configuration (`cypress.config.js`)
@@ -352,21 +347,6 @@ npm run serve
 2. Verify mochawesome packages are installed: `npm install`
 3. Run the full report command: `npm run test:report:all`
 
-### Issue: Port 8080 already in use
-**Solution**: 
-- Kill the process using port 8080:
-  ```bash
-  lsof -ti:8080 | xargs kill -9
-  ```
-- Or use a different port and update `cypress.config.js` baseUrl
-
-### Issue: Task 2 (SauceDemo) test fails with timeout
-**Solution**: 
-- Check your internet connection (SauceDemo tests require internet access)
-- Verify the SauceDemo website is accessible: https://www.saucedemo.com/
-- Ensure credentials are correct: `standard_user` / `secret_sauce`
-
----
 
 ## ✅ Test Results Summary
 
@@ -376,26 +356,3 @@ npm run serve
 - **Total: 3 tests, all passing** ✨
 
 All tests pass successfully with proper synchronization, clean code structure, and comprehensive reporting.
-
----
-
-## 📚 Additional Resources
-
-- [Cypress Documentation](https://docs.cypress.io/)
-- [Cypress Best Practices](https://docs.cypress.io/guides/references/best-practices)
-- [Page Object Model Pattern](https://docs.cypress.io/guides/references/best-practices#Organizing-Tests-Login-Custom-Commands-and-Seeding-State)
-- [Mochawesome Documentation](https://github.com/adamgruber/mochawesome)
-
----
-
-## 👤 Author
-
-Test suite created for comprehensive E2E testing with Cypress, including API mocking and UI flow testing.
-
-## 📄 License
-
-ISC
-
----
-
-**Happy Testing! 🎉**
